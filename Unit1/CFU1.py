@@ -1,3 +1,7 @@
+#9/10/2024
+#Period 1-2
+#Aliyah Pargan
+
 fname = input
 lname = input
 
