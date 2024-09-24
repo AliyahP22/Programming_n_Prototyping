@@ -10,5 +10,5 @@ import math
 root1 = (-b + (b ** 2 - 4 * a * c) **0.5) /(2 * a)
 root2 =  (-b - (b ** 2 - 4 * a * c) **0.5) /(2 * a)
 
-print(fname + " the roots of your equation are " + str(root1) , str(root2))
+print(fname + " the roots of your equation are " + "x = " + str(root1) , " and x = " + str(root2))
 
