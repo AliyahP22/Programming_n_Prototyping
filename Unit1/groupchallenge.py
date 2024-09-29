@@ -5,7 +5,7 @@ width = int(input("Enter a number: "))
 perimeter = (2 * length) + (2 * width)
 print("Perimeter of a " + str(length) + " by " +  str(width) + " rectangle is " + str(perimeter))
 
-#Challenge 2 Aliyah Pargan
+#Challenge 2 
 print("Fahrenheit to Celcius")
 temp = float(input("Enter a fahrenheit temperature"))
 celcius = (temp - 32) * 5/9
