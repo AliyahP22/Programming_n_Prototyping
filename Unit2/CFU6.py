@@ -22,6 +22,7 @@ Power_random = (math.pow(user_number,num_random))
 
 print(" ")
 print("Results: ")
+print("Random Number: " + str(num_random))
 print("Your Number: " + str(user_number))
 print("Sum: " + str(num_random), "+ " ,str(user_number) + " = " + str(Sum))
 print("Difference: " + str(num_random), "-" ,str(user_number) + " = " + str(Difference))
