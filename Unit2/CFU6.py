@@ -18,7 +18,7 @@ Product = num_random * user_number
 Quotient = num_random // user_number
 Remainder = num_random % user_number
 Square_root = (math.sqrt(num_random))
-Power_random = 
+Power_random = (math.pow(user_number,num_random))
 
 print(" ")
 print("Results: ")
@@ -29,5 +29,7 @@ print("Product: " + str(num_random), "*" ,str(user_number) + " = " + str(Product
 print("Quotient: " + str(num_random), "//" ,str(user_number) + " = " + str(Quotient))
 print("Remainder: " + str(num_random), "%" ,str(user_number) + " = " + str(Remainder))
 print("Square Root of Random Number: " + "sqrt(",str(num_random), ")" + " = " + str(Square_root))
+print("Your Number to the Power of Random Number: " + str(user_number),"^", 
+      str(num_random) + "=" + str(Power_random))
 
 
