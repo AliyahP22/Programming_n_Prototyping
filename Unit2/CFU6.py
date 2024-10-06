@@ -1,3 +1,5 @@
+#Periods 1-2 Aliyah Pargan 10-6-2024
+
 print("Hi! Welcome to the Random Number Calculator!")
 print("I will generate a random number between 1 and 100")
 
@@ -10,10 +12,22 @@ print("Random number generated: " + str(num_random))
 print("Please enter a number: " + str(user_number))
 
 import math
+Sum = num_random + user_number
+Difference = num_random - user_number
+Product = num_random * user_number
+Quotient = num_random // user_number
+Remainder = num_random % user_number
+Square_root = (math.sqrt(num_random))
+Power_random = 
+
 print(" ")
 print("Results: ")
 print("Your Number: " + str(user_number))
-print("
-
+print("Sum: " + str(num_random), "+ " ,str(user_number) + " = " + str(Sum))
+print("Difference: " + str(num_random), "-" ,str(user_number) + " = " + str(Difference))
+print("Product: " + str(num_random), "*" ,str(user_number) + " = " + str(Product))
+print("Quotient: " + str(num_random), "//" ,str(user_number) + " = " + str(Quotient))
+print("Remainder: " + str(num_random), "%" ,str(user_number) + " = " + str(Remainder))
+print("Square Root of Random Number: " + "sqrt(",str(num_random), ")" + " = " + str(Square_root))
 
 
