@@ -8,10 +8,12 @@ else:
     print("NO?! So who is cooking?")
     
 
-cost = float(input("How much did the food cost?"))
+cost = int(input("How much did the food cost?"))
 people = int(input("How many people are splitting the order?"))
-cost_split = cost / people
+cost_split = cost // people
 
 if user_question == "yes":
     print("How much did the food cost?")
-    print("The cost per person is " + str(cost_split))
+    print("The cost per person is " + "$" + str(cost_split))
+else: 
+    print("NO?! So who is cooking?")
