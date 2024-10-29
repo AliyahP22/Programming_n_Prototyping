@@ -4,7 +4,6 @@
 
 #Version 1
 password = "simonsync"
-password = "simonsync"
 user_guess = " "
 
 while password != user_guess:
