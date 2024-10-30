@@ -5,35 +5,32 @@
 
 def version_1():
     password = "simonsync"
-    user_guess = " "
+    user_guess = input("What is the password")
     while password != user_guess:
         print("Wrong, please try again")
         user_guess = input("What is the password?")
     
     print("Correct, you may enter!!")
 
-
 def version_2():
     password = "simonsync"
-    num_tries = 0
-    while num_tries < 3:
+    guess = 3
+    attempts = 0
+    
+    while guess < 3:
         user_guess = input("What is the password?")
-        if user_guess != password:
+        if user_guess != password :
              print("Wrong, please try again")
-             num_tries+=1
-         
+             guess-=1
+             attempts+=1
+        elif user_guess!= password and guess == 0:
+            print("Out of attempts, try again!")
+             
         else:
             print("Correct, you may enter!!")
-            num_tries+=1
-            return user_guess
-        print("Max Attempts: 3")
-        print(f"Your Attempts: {num_tries}")
-        if num_tries == 3:
-            print("Out of attempts, try again!")
-        else:
-            print(" ")
             
 
 version_1()            
 version_2()
+
 
