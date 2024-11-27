@@ -5,36 +5,38 @@
 #using dots and coordinates 
 
 
-
-import simplegui
+import simplegui 
 
 def draw_handler(canvas):
-    #create the drawing
-    #canvas.draw_point([x,y],"color")
+    # Left Eye
+    canvas.draw_point([50, 70], "blue")
+    canvas.draw_point([50, 72], "blue")
+
     
-    canvas.draw_point([100,109],"red")
-    canvas.draw_point([100,100],"red")
-    canvas.draw_point([107,100],"red")
-    canvas.draw_point([111,107],"red")
-    canvas.draw_point([109,107],"red")
-    canvas.draw_point([108,107],"red")
-    canvas.draw_point([107,107],"red")
-    canvas.draw_point([106,107],"red")
-    canvas.draw_point([105,108],"red")
-    canvas.draw_point([104,108],"red")
-    canvas.draw_point([103,108],"red")
-    canvas.draw_point([102,108],"red")
-    canvas.draw_point([101,108],"red")
-    canvas.draw_point([100,108],"red")
-    canvas.draw_point([99,108],"red")
-    canvas.draw_point([98,108],"red")
-    canvas.draw_point([97,108],"red")
-    canvas.draw_point([96,108],"red")
-    canvas.draw_point([95,108],"red")
-    canvas.draw_point([94,107],"red")
-    canvas.draw_point([93,107],"red")
-    canvas.draw_point([92,106],"red")
-frame= simplegui.create_frame("CFU 13: Happy Face", 200,200)
-frame.set_canvas_background("cyan")
+    # Right Eye
+    canvas.draw_point([140, 70], "blue")
+    canvas.draw_point([140, 72], "blue")
+
+    
+    # Smile
+    canvas.draw_point([70, 130], "red")
+    canvas.draw_point([72, 132], "red")
+    canvas.draw_point([74, 134], "red")
+    canvas.draw_point([76, 135], "red")
+    canvas.draw_point([78, 136], "red")
+    canvas.draw_point([80, 137], "red")
+    canvas.draw_point([82, 137], "red")
+    canvas.draw_point([84, 137], "red")
+    canvas.draw_point([86, 136], "red")
+    canvas.draw_point([88, 135], "red")
+    canvas.draw_point([90, 134], "red")
+    canvas.draw_point([92, 132], "red")
+    canvas.draw_point([94, 130], "red")
+    
+# Create frame
+frame = simplegui.create_frame("CFU13 Happy Dots", 200, 200)
+frame.set_canvas_background("white")
 frame.set_draw_handler(draw_handler)
+
+# Start frame
 frame.start()
