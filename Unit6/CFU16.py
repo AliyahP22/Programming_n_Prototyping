@@ -1,4 +1,4 @@
-##Aliyah Pargan
+#Aliyah Pargan
 #Periods 1-2
 #12-1-2024
 #CFU 16, which is a practice of using the canvas.draw_circle to create a happy face on a
@@ -14,9 +14,14 @@ def draw_handler(canvas):
     canvas.draw_circle((74, 134), 3, 5, "Black", "black")
     canvas.draw_circle((76, 136), 3, 5, "Black", "black")
     canvas.draw_circle((78, 138), 3, 5, "Black", "black")
-
-
-
+    canvas.draw_circle((80, 140), 3, 5, "Black", "black")
+    canvas.draw_circle((82, 140), 3, 5, "Black", "black")
+    canvas.draw_circle((84, 140), 3, 5, "Black", "black")
+    canvas.draw_circle((86, 138), 3, 5, "Black", "black")
+    canvas.draw_circle((88, 138), 3, 5, "Black", "black")
+    canvas.draw_circle((90, 137), 3, 5, "Black", "black")
+    canvas.draw_circle((92, 135), 3, 5, "Black", "black")
+    canvas.draw_circle((94, 133), 3, 5, "Black", "black")
 
 
 
@@ -25,3 +30,5 @@ def draw_handler(canvas):
 frame = simplegui.create_frame("CFU 16 Happy Circles", 200,200)
 frame.set_canvas_background("lavenderblush")
 frame.set_draw_handler(draw_handler)
+
+frame.start()
