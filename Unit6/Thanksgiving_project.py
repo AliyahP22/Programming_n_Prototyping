@@ -38,10 +38,9 @@ def draw_handler(canvas):
     # Assign draw handler to the frame
 frame.set_draw_handler(draw_handler)
 #add button code
-frame.add_button("Click here!", click_button)
+frame.add_button("Click here!", click_button)#calls function
 
 
 
 #start frame
 frame.start()
-click_button() #call function
