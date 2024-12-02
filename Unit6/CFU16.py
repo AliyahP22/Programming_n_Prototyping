@@ -5,8 +5,13 @@
 #200 by 200 frame using simplegui
 
 import simplegui
-
-
+def draw_handler(canvas):
+    canvas.draw_circle((100, 100), 60, 5, "Black", "Mediumvioletred")
+    canvas.draw_circle((75, 80), 5, 5, "Black", "black")
+    canvas.draw_circle((112, 80), 5, 5, "Black", "black")
+    canvas.draw_circle((70, 120), 3, 5, "Black", "black")
+    canvas.draw_circle((70, 120), 3, 5, "Black", "black")
+    canvas.draw_circle((70, 120), 3, 5, "Black", "black")
 
 
 
