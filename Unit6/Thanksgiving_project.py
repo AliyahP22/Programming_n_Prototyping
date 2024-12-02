@@ -9,16 +9,19 @@
 import simplegui
 
 #create frame
-frame = simplegui.create_frame("Thanksgiving Drawing", 400,600)
+frame = simplegui.create_frame("Thanksgiving Drawing", 600,600)
 frame.set_canvas_background("black")
 
-message = "Hello!"
+message = "Happy Thanksgiving!"
 #my function
 def click_button():
-    message = "Happy Thanksgiving! Hope you Enjoy!"
+    global message
+    message = "Enjoy the Holiday Season!"
     
 # Draw handler function
 def draw(canvas):
+    #Adding a message to frame
+    canvas.draw_text(message, [70,100],40,"Maroon")
     # Example: Drawing a circle
     canvas.draw_circle((300, 200), 50, 5, "Brown", "Orange")
     # Example: Drawing a line
@@ -28,7 +31,8 @@ def draw(canvas):
     # Example: Drawing a point
     canvas.draw_point((300, 200), "Blue")
 
-# Assign draw handler to the frame
+
+    # Assign draw handler to the frame
 frame.set_draw_handler(draw)
 #add button code
 frame.add_button("Click here!", click_button)
@@ -37,3 +41,4 @@ frame.add_button("Click here!", click_button)
 
 #start frame
 frame.start()
+click_button() #call function
