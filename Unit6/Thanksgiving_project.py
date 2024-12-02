@@ -7,33 +7,36 @@
 
 
 import simplegui
-
+message = "Happy Thanksgiving!"
 #create frame
 frame = simplegui.create_frame("Thanksgiving Drawing", 600,600)
 frame.set_canvas_background("black")
 
-message = "Happy Thanksgiving!"
+
 #my function
 def click_button():
     global message
     message = "Enjoy the Holiday Season!"
     
 # Draw handler function
-def draw(canvas):
+def draw_handler(canvas):
     #Adding a message to frame
     canvas.draw_text(message, [70,100],40,"Maroon")
     # Example: Drawing a circle
-    canvas.draw_circle((300, 200), 50, 5, "Brown", "Orange")
-    # Example: Drawing a line
-    canvas.draw_line((100, 200), (500, 200), 3, "Black")
-    # Example: Drawing a polygon
-    canvas.draw_polygon([(250, 250), (350, 250), (300, 300)], 5, "Red", "Yellow")
+    canvas.draw_circle((300, 200), 60, 5, "SaddleBrown", "SaddleBrown")
+    canvas.draw_circle((313, 200), 5, 5, "black", "black")
+    canvas.draw_circle((280, 200), 5, 5, "black", "black")
+    canvas.draw_polygon([(320, 210), (285, 210), (312, 227)], 5, "Red", "Yellow")
+    canvas.draw_circle((300, 330), 80, 5, "SaddleBrown", "SaddleBrown")
+    
+  
+   
     # Example: Drawing a point
     canvas.draw_point((300, 200), "Blue")
 
 
     # Assign draw handler to the frame
-frame.set_draw_handler(draw)
+frame.set_draw_handler(draw_handler)
 #add button code
 frame.add_button("Click here!", click_button)
 
