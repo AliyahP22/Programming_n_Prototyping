@@ -33,13 +33,27 @@ def draw_handler(canvas):
     canvas.draw_circle((370, 345), 50, 5, "FireBrick", "Gold")
     canvas.draw_circle((360, 320), 50, 5, "FireBrick", "Gold")
     canvas.draw_circle((300, 330), 90, 5, "SaddleBrown", "SaddleBrown")
-   
     
+   
+    #creating the table
+    canvas.draw_line((1, 400), (600, 400), 100, "Crimson")
+    canvas.draw_line((1, 500), (600, 500), 100, "Crimson")
+    canvas.draw_line((1, 600), (600, 600), 100, "Crimson")
   
-   # drawing the pumpkins 
-    canvas.draw_circle((400, 500), 60, 5, "Black", "DarkOrange")
-    canvas.draw_circle((525, 500), 60, 5, "Black", "DarkOrange")
-    canvas.draw_line((400, 440), (420, 560), 3, "Black")
+   # drawing the plates for table 
+    canvas.draw_circle((35, 400), 30, 5, "Black", "Slategray")
+    canvas.draw_circle((35, 400), 20, 4, "Black", "Slategray")
+    canvas.draw_circle((300, 400),30, 5, "Black", "Slategray")
+    canvas.draw_circle((300, 400), 20, 4, "Black", "Slategray")
+    canvas.draw_circle((500, 400),30, 5, "Black", "Slategray")
+    canvas.draw_circle((500, 400), 20, 4, "Black", "Slategray")
+    canvas.draw_circle((300, 570),30, 5, "Black", "Slategray")
+    canvas.draw_circle((300, 570), 20, 4, "Black", "Slategray")
+    canvas.draw_circle((35, 570), 30, 5, "Black", "Slategray")
+    canvas.draw_circle((35, 570), 20, 4, "Black", "Slategray")
+    canvas.draw_circle((500, 570), 30, 5, "Black", "Slategray")
+    canvas.draw_circle((500, 570), 20, 4, "Black", "Slategray")
+    
     
     # Example: Drawing a point
     canvas.draw_point((300, 200), "Blue")
@@ -54,6 +68,5 @@ frame.add_button("Click here!", click_button) #calls function
 
 #start frame
 frame.start()
-
 
 
