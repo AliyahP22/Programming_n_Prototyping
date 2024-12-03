@@ -55,7 +55,7 @@ def draw_handler(canvas):
     canvas.draw_circle((500, 570), 20, 4, "Black", "Slategray")
     
     
-    # Example: Drawing a point
+    # Drawing a point
     canvas.draw_point((300, 200), "Blue")
 
 
