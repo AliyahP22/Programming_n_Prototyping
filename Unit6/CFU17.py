@@ -11,9 +11,8 @@ frame_height = int(input("Initial Height?"))
 
 def draw(canvas):
     canvas.draw_line([0,0],[100,100],3,color1)
+    canvas.draw_text(message,[frame_width/2,frame_height/2],30,color1)
     
-def draw_face(canvas,cx,cy,scale):
-    canvas.draw_circle((cx,cy), scale*0.4, 5, "black", "yellow")
 
 
 
