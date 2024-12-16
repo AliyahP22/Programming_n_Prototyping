@@ -35,7 +35,12 @@ def draw(canvas):
     canvas.draw_circle((480, 190), 5, 5, "black", "black")
     canvas.draw_circle((520, 190), 5, 5, "black", "black")
     canvas.draw_polygon([(500, 190), (510, 208), (508, 190)], 3, "darkorange", "darkorange")
-    
+    canvas.draw_circle((520, 220), 4, 1, "black", "black")
+    canvas.draw_circle((500, 220), 4, 1, "black", "black")
+    canvas.draw_circle((480, 218), 4, 1, "black", "black")
+    canvas.draw_circle((500, 270), 6, 1, "black", "black")
+    canvas.draw_circle((500, 290), 6, 1, "black", "black")
+    canvas.draw_circle((500, 310), 6, 1, "black", "black")
     
     for i in range(snowflakes):
         snowflake_x = random.randint(0,width)
