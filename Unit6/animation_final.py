@@ -27,6 +27,21 @@ def draw(canvas):
     global snow_fall
     canvas.draw_polygon([(0,0),(width,0),(width,height),(0,height)],1,"white","lightskyblue")
     canvas.draw_text(message, [170,150],40,"Maroon")
+    canvas.draw_line((170, 160), (458, 160), 5, "black")
+    canvas.draw_circle((180, 170),5, 5, "Snow", "Red")
+    canvas.draw_circle((200, 170),5, 5, "Snow", "green")
+    canvas.draw_circle((225, 170),5, 5, "Snow", "Red")
+    canvas.draw_circle((245, 170),5, 5, "Snow", "green")
+    canvas.draw_circle((265, 170),5, 5, "Snow", "Red")
+    canvas.draw_circle((285, 170),5, 5, "Snow", "green")
+    canvas.draw_circle((305, 170),5, 5, "Snow", "Red")
+    canvas.draw_circle((325, 170),5, 5, "Snow", "green")
+    canvas.draw_circle((345, 170),5, 5, "Snow", "Red")
+    canvas.draw_circle((365, 170),5, 5, "Snow", "green")
+    canvas.draw_circle((385, 170),5, 5, "Snow", "Red")
+    canvas.draw_circle((405, 170),5, 5, "Snow", "green")
+    canvas.draw_circle((425, 170),5, 5, "Snow", "Red")
+    canvas.draw_circle((445, 170),5, 5, "Snow", "green")
     canvas.draw_line((1, 600), (600, 600), 100, "white")
     canvas.draw_line((1, 500), (600, 500), 100, "white")
     canvas.draw_circle((500, 400), 75, 5, "Snow", "white")
@@ -55,3 +70,5 @@ frame.set_draw_handler(draw)
                   
                   
 frame.start()
+
+
