@@ -10,8 +10,13 @@ import random
 
 #message to be displayed
 message = "Happy Holidays!!"
+
+
 #global variable used for snowfall
 snow_fall = []
+
+message_x = -40
+
 
 #values for frame
 width = 600
@@ -25,8 +30,10 @@ for i in range(snowflakes):
     
 def draw(canvas):
     global snow_fall
+    global message_x
+    message_x = message_x + 5
     canvas.draw_polygon([(0,0),(width,0),(width,height),(0,height)],1,"white","lightskyblue")
-    canvas.draw_text(message, [170,150],40,"Maroon")
+    canvas.draw_text(message, [message_x,150],40,"Maroon")
     canvas.draw_line((170, 160), (458, 160), 5, "black")
     canvas.draw_circle((180, 170),5, 5, "Snow", "Red")
     canvas.draw_circle((200, 170),5, 5, "Snow", "green")
@@ -70,5 +77,4 @@ frame.set_draw_handler(draw)
                   
                   
 frame.start()
-
 
