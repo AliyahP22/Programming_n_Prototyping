@@ -12,3 +12,11 @@ print(str(names[1:5]) + " is " + str(ages[1:5]) + " years old")
 
 for i in range(len(ages)):
     print("My friend " + names[i] + " is " + str(ages[i]) + " years old")
+
+
+#built in commands practice
+groceries.append("Lollipop")
+print(groceries)
+
+groceries.remove("Eggs")
+print(groceries)
