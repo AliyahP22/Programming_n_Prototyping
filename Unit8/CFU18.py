@@ -27,4 +27,21 @@ print("The total prices you added is: $ ",total_price)
 
 
 #version 3
+prices = []
+items = []
+
+amount_items = int(input("How many items would you like to add? ")) #user input
+
+for i in range(amount_items): 
+    name = input(f"Enter the name of item {i + 1}: ")
+    price = float(input(f"Enter the price of {name}: "))                   
+    items.append(name)
+    prices.append(price) #adds user input to list
     
+    
+total = sum(prices)
+
+print("Your receipt!!")
+for i in range(amount_items):
+    print(f"{items[i]}: ${prices[i]}")
+print("Total Spent: $",total)
