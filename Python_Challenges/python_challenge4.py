@@ -5,6 +5,7 @@
 #result in an image, like a grid
 
 
+#original grid
 def drawGrid():
     for row in range(2):  # 4 rows
         print("+", "-", "-", "-", "-", "+", "-", "-", "-", "+", sep='', end=' ')
@@ -18,3 +19,25 @@ def drawGrid():
     print()  
         
 drawGrid()
+
+
+print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+
+#grid with 4 rows and 4 columns
+def draw_grid():
+    for row in range(4):  
+        print("+", "-", "-", "-", "-", "+", "-", "-", "-", "+","+", "-", "-", "-", "-", "+","+", "-", "-", "-", "-", "+", sep='', end=' ')
+        print()  
+        for space in range(4): 
+            print("|", " " * 4, "|", " " * 4, "|", " " * 4, "|", " " * 4, "|", sep='', end=' ')
+            print()  
+
+
+    print("+", "-", "-", "-", "-", "+", "-", "-", "-", "+","+", "-", "-", "-", "-", "+","+", "-", "-", "-", "-", "+", sep='', end=' ')
+    print() 
+
+
+draw_grid()
+
+
+
