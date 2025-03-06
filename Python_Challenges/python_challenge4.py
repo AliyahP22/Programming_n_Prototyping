@@ -6,38 +6,38 @@
 
 
 #original grid
-def drawGrid():
-    for row in range(2):  # 4 rows
-        print("+", "-", "-", "-", "-", "+", "-", "-", "-", "+", sep='', end=' ')
+def drawGrid(): #define function
+    for row in range(2): #makes a loop that repeats 2 times 
+        print("+", "-", "-", "-", "-", "+", "-", "-", "-", "+", sep='', end=' ') #creates the top part
         print() 
         for space in range(4):  
-            print("|", " " * 1, "|", " " * 1, "|", " " * 1)
-            print()  
+            print("|", " " * 1, "|", " " * 1, "|", " " * 1) #creates the spaces in the rows
+            print() #prints in a separate line 
 
     
-    print("+", "-", "-", "-", "-", "+", "-", "-", "-", "+", sep='', end=' ')
-    print()  
+    print("+", "-", "-", "-", "-", "+", "-", "-", "-", "+", sep='', end=' ') #creates the bottom rows
+    print()#prints in a separate line 
         
-drawGrid()
+drawGrid() #call function
 
 
 print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
 #grid with 4 rows and 4 columns
-def draw_grid():
-    for row in range(4):  
+def draw_grid(): #call function
+    for row in range(4): #creates for loop that runs exactly 4 times  
         print("+", "-", "-", "-", "-", "+", "-", "-", "-", "+","+", "-", "-", "-", "-", "+","+", "-", "-", "-", "-", "+", sep='', end=' ')
-        print()  
-        for space in range(4): 
-            print("|", " " * 4, "|", " " * 4, "|", " " * 4, "|", " " * 4, "|", sep='', end=' ')
-            print()  
+        print() #prints in a separate line  
+        for space in range(4): #loop runs exactly 4 times
+            print("|", " " * 4, "|", " " * 4, "|", " " * 4, "|", " " * 4, "|", sep='', end=' ') #creates spaces within the rows
+            print() #prints in a separate line 
 
 
     print("+", "-", "-", "-", "-", "+", "-", "-", "-", "+","+", "-", "-", "-", "-", "+","+", "-", "-", "-", "-", "+", sep='', end=' ')
-    print() 
+    print() #prints in a separate line
 
 
-draw_grid()
+draw_grid() #call function
 
 
 
