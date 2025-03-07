@@ -14,3 +14,5 @@ def check_fermat(a, b,c,n): #define function with 4 parameters
             print("No, that doesn't work")
             
 check_fermat(3,4,2,5) #call function with testing values 
+check_fermat(2,4,6,8)#call function with testing values
+check_fermat(3,5,9,3)#call function with testing values
