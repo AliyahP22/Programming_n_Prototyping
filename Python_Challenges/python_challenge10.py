@@ -1,3 +1,9 @@
+
+#Aliyah P
+#period 1
+#03-21-2025
+#python coding challenge 10
+
 import turtle
 import math 
 #initial code to draw tree
