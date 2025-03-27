@@ -19,13 +19,16 @@ def main(): #define main function to draw flowers
     bob.speed(0)  
     bob.delay = 0.01#speeds up bob
     bob.color("purple") #add color to big flower
+    draw_flower(bob, 200, 8) #flower position
+    bob.color("magenta") #add color to big flower
     draw_flower(bob, 100, 8) #flower position
     bob.penup()
     bob.goto(0, -50)  
     bob.pendown()
-    bob.color("magenta")  #color to little flower
+    bob.color("orange")  #color to little flower
     draw_flower(bob, 50, 8) #flower position 
-
+    bob.color("blue")  #color to little flower
+    draw_flower(bob, 20, 8) #flower position 
     turtle.done() #call function
 
 main()#call function
